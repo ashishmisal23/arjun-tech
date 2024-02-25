@@ -3,16 +3,16 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import './Style/color.css';
 import './Style/animation.css';
-import Header from './Componants/Header';
-import Home from './Componants/Home';
-import About from './Componants/About';
-import Services from './Componants/Services';
-import ContactUs from './Componants/ContactUs';
-import Footer from './Componants/Footer';
-import ErrorMsg from './Componants/ErrorMsg';
+import Header from './Components/Header';
+import Home from './Components/Home';
+import About from './Components/About';
+import Services from './Components/Services';
+import ContactUs from './Components/ContactUs';
+import Footer from './Components/Footer';
+import ErrorMsg from './Components/ErrorMsg';
 
 const App = () => {
-  
+
   return (
     <Router>
       <Header />

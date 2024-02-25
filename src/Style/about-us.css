@@ -1,0 +1,162 @@
+#about {
+    max-height: calc(screen-40vw);
+}
+
+#about-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+.section-container {
+    margin-left: 50px;
+    margin-right: 50px;
+    max-width: 100vw;
+    display: grid;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.about-half {
+    max-width: 50vw;
+    display: grid;
+    gap: 20px;
+}
+
+.about-half img {
+    max-width: 40vw;
+    border-radius: 3.5rem 0.2rem;
+    transition: box-shadow 2s, translate 2s;
+}
+
+.about-half img:hover {
+    box-shadow: 0px 0px 20px 2px white;
+    translate: 2px;
+}
+
+.about-half p {
+    text-align: justify;
+}
+
+
+.about h2::selection,
+.about p::selection {
+    color: black;
+}
+
+.btn {
+    border: 2px solid white;
+    max-width: fit-content;
+    padding: 0.5rem 0.75rem;
+    border-radius: 2rem;
+}
+
+.banner-content {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1.2rem;
+}
+
+.btn a,
+.btn a:visited,
+.btn a:active,
+.btn a:link {
+    color: white;
+    text-decoration: none;
+}
+
+.aboutus-grid {
+    max-width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2.5rem;
+}
+
+.grid-column {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.75rem;
+    border: 5px solid skyblue;
+    padding: 2.5rem;
+    border-radius: 10px 120px 10px 120px;
+    max-width: 40vw;
+    box-shadow: 0px 10px 10px 1px grey;
+}
+
+.grid-column ul {
+    list-style-type: circle;
+}
+
+.grid-column ul li {
+    text-align: justify;
+}
+
+@media screen and (max-width:1080px) {
+    #about-content {
+        grid-template-columns: 1fr;
+        align-items: center;
+    }
+
+    .section-container {
+        margin: auto;
+    }
+
+    .about-half {
+        max-width: 85vw;
+        gap: 15px;
+        margin: auto;
+    }
+
+    .about-half img {
+        max-width: 55vw;
+    }
+
+    .aboutus-grid {
+        margin: auto 20px;
+        grid-template-columns: 1fr;
+        gap: 1.2rem;
+    }
+
+    .grid-column {
+        max-width: 100vw;
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+
+    .grid-column ul li {
+        text-align: justify;
+    }
+
+    .banner-content h2 {
+        text-align: center;
+    }
+
+    .banner-content .btn {
+        margin: auto;
+
+    }
+}
+
+@media screen and (max-width:786px) {
+    .about-half img {
+        max-width: 60vw;
+    }
+}
+
+@media screen and (max-width:480px) {
+    .section-container {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .about-half {
+        max-width: 100vw;
+        gap: 10px;
+        margin: auto;
+    }
+
+    .about-half img {
+        max-width: 70vw;
+    }
+}

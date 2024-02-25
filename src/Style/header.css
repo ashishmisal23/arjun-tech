@@ -1,0 +1,147 @@
+/* Resetting some default styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+/* Header Styles */
+header {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.navbar {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    align-items: center;
+}
+
+.logo-container img {
+    max-width: 250px;
+}
+
+.nav-list-container {
+    flex-grow: 1;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+.nav-list a {
+    text-decoration: none;
+    color: #ffffff86;
+    font-weight: bolder;
+    transition: color 0.3s ease;
+}
+
+.nav-list a:hover {
+    color: #ffffff;
+    /* Change to your desired hover color */
+}
+
+.nav-list a:active {
+    color: #ffffff;
+}
+
+.navbar-msgbtn {
+    display: inline-flex;
+    justify-content: end;
+}
+
+
+.msgbtn {
+    background-color: #ffffff;
+    color: #06B4E7;
+    padding: 0.3rem 0.5rem;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    display: inline-flex;
+    gap: 0.1rem;
+    align-items: center;
+}
+
+.msgbtn img {
+    max-width: 2rem;
+}
+
+.msgbtn:hover {
+    background-color: #06B4E7;
+    color: #ffffff;
+    border: 1px solid #f4f4f4;
+}
+
+@media screen and (max-width:1080px) {
+    .logo-container img {
+        max-width: 235px;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .logo-container img {
+        max-width: 230px;
+    }
+}
+
+@media screen and (max-width: 786px) {
+    header {
+        padding-left: 2%;
+        padding-right: 2%;
+    }
+
+    .navbar {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .logo-container img {
+        max-width: 200px;
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+    }
+
+
+    .navbar-msgbtn {
+        display: flex;
+        justify-content: center;
+        padding: 0.5rem;
+    }
+
+    .msgbtn img {
+        max-width: 1.5rem;
+    }
+
+}
+
+@media screen and (max-width: 480px) {
+    .navbar {
+        grid-template-columns: 1fr;
+        text-align: center;
+        gap: 5px;
+    }
+
+    .nav-list-container ul li a {
+        font-size: 14px;
+    }
+
+
+    .logo-container img {
+        max-width: 160px;
+    }
+}

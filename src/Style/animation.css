@@ -1,0 +1,187 @@
+/*HOME PAGE*/
+
+.home-info-desc h1 {
+    animation: primarytosecondarytext;
+    animation-duration: 2s;
+    animation-delay: 100;
+
+}
+
+.home-info-desc p {
+    animation: primarytosecondarydim-wht-text;
+    animation-duration: 2s;
+    animation-delay: 500;
+}
+
+
+@keyframes primarytosecondarytext {
+    20% {
+        color: #45d4ff;
+    }
+
+    60% {
+        color: #06B4E7;
+    }
+
+    100% {
+        color: #ffffff;
+    }
+}
+@keyframes primarytosecondarydim-wht-text {
+    20% {
+        color: #45d4ff;
+    }
+
+    60% {
+        color: #06B4E7;
+    }
+
+    100% {
+        color:  #ffffff86;
+    }
+}
+
+/*ABOUT PAGE*/
+.about-half h2 {
+    animation: primarytosecondarytext;
+    animation-duration: 2s;
+    animation-delay: 100;
+}
+
+.about-half p {
+    animation: primarytosecondarydim-wht-text;
+    animation-duration: 3s;
+    animation-delay: 500;
+}
+
+.about-half img {
+    animation: img-rescaller-about;
+    animation-duration: 3s;
+    animation-delay: 1000;
+    animation-timing-function: ease-in;
+}
+
+@keyframes img-rescaller-about {
+    0% {
+        max-width: 30vw;
+    }
+
+    100% {
+        max-width: 40vw;
+    }
+}
+
+
+@media screen and (max-width:1080px) {
+
+
+    @keyframes img-rescaller-about {
+        0% {
+            max-width: 30vw;
+        }
+
+        100% {
+            max-width: 55vw;
+        }
+    }
+}
+
+@media screen and (max-width:786px) {
+
+
+    @keyframes img-rescaller-about {
+        0% {
+            max-width: 30vw;
+        }
+
+        100% {
+            max-width: 60vw;
+        }
+    }
+}
+
+@media screen and (max-width:480px){
+    @keyframes img-rescaller-about {
+        0% {
+            max-width: 40vw;
+        }
+
+        100% {
+            max-width: 70vw;
+        }
+    }
+}
+
+/*SERVICES*/
+.services-half h2{
+    animation: primarytosecondarytext;
+    animation-duration: 2s;
+    animation-delay: 1s;
+}
+
+.services-half p{
+    animation: primarytosecondarydim-wht-text;
+    animation-duration: 2s;
+    animation-delay: 3s;
+}
+.services-img img{
+    animation: img-rescaller-services;
+    animation-duration: 4s;
+    animation-delay: 500;
+    animation-timing-function: ease-in;
+}
+
+@keyframes img-rescaller-services {
+    0% {
+        max-width: 30vw;
+    }
+
+    100% {
+        max-width: 45vw;
+    }
+}
+
+@media screen and (max-width:786px) {
+
+    @keyframes img-rescaller-services {
+        0% {
+            max-width: 40vw;
+        }
+    
+        100% {
+            max-width: 65vw;
+        }
+    }
+}
+/*CONTACT*/
+
+.call-now-container h2{
+    animation: primarytosecondarytext;
+    animation-duration: 2s;
+    animation-delay: 100;
+
+}
+
+.call-email-container a {
+    animation: primarytosecondarytext;
+    animation-duration: 2s;
+    animation-delay: 500;
+}
+.box p{
+    animation: secondarytoprimary;
+    animation-duration: 2s;
+    animation-delay: 100;
+}
+@keyframes secondarytoprimary {
+    20% {
+        color: #ffffff;
+    }
+
+    60% {
+        color: #45d4ff;
+    }
+
+    100% {
+        color: #06B4E7;
+    }
+}

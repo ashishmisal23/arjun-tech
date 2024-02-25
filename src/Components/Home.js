@@ -1,6 +1,6 @@
 import React from 'react';
-import home1 from '../Images/home.jpg';
-import technology from '../Images/technology.png';
+import home1 from './Images/home.jpg';
+import technology from './Images/technology.png';
 import { Link } from 'react-router-dom';
 
 const Home = () => {

@@ -6,4 +6,4 @@ Website is Hosted @ www.arjuntech.in
   All Rights are Reserved with &copy; Arjun Tech, 2018
   Contact Details :
   - Mobile : 7879797676 
-  - mail to :admin@arjuntech.in
+  - mail to : admin@arjuntech.in

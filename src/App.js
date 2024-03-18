@@ -10,7 +10,7 @@ import Services from './Components/Services';
 import ContactUs from './Components/ContactUs';
 import Footer from './Components/Footer';
 import ErrorMsg from './Components/ErrorMsg';
-
+import { SpeedInsights } from "@vercel/speed-insights/react"
 const App = () => {
 
   return (
@@ -25,7 +25,7 @@ const App = () => {
         <Route path='/*' element={<ErrorMsg />} />
 
       </Routes>
-
+      <SpeedInsights />
       <Footer />
     </Router>
 

@@ -10,9 +10,9 @@ const Footer = () => {
                 <div className="column-1">
                     <h3 className="white-color">Arjun Tech</h3>
                     <p className="dim2-white-color">
-                        Shop no 3, First Floor, Shubhra Complex, <br />
-                        Near PNB Bank, Undri Chowk, Undri,<br />
-                        Pune, Maharashtra - 411060
+                        Shop No. 03, Near Shell Petrol Pump, <br />
+                        Durvankur Society, Ashoka Nagar, <br />
+                        Kharadi, Pune - 411014
                     </p>
 
 

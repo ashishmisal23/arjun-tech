@@ -14,25 +14,22 @@ import { SpeedInsights } from "@vercel/speed-insights/react"
 import { Analytics } from '@vercel/analytics/react';
 
 const App = () => {
-
   return (
     <Router>
       <Header />
-
-      <Routes>
-        <Route exact path='/' element={<Home />} />
-        <Route exact path='/about' element={<About />} />
-        <Route exact path='/services' element={<Services />} />
-        <Route exact path='/contact' element={<ContactUs />} />
-        <Route path='/*' element={<ErrorMsg />} />
-
-      </Routes>
+      <main>
+        <Routes>
+          <Route exact path='/' element={<Home />} />
+          <Route exact path='/about' element={<About />} />
+          <Route exact path='/services' element={<Services />} />
+          <Route exact path='/contact' element={<ContactUs />} />
+          <Route path='/*' element={<ErrorMsg />} />
+        </Routes>
+      </main>
+      <Footer />
       <SpeedInsights />
       <Analytics />
-      <Footer />
     </Router>
-
-
   );
 }
 
